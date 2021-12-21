@@ -21,14 +21,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  width: 100%;
 }
-* {
+*, body, html {
   padding: 0;
   margin: 0;
 }
-body {
+html, body{
   background-color: #FAF9F6;
+  height: 100%;
+  width: 100%;
 }
 </style>

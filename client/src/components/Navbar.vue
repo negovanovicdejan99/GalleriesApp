@@ -2,7 +2,7 @@
   <div class="navbar-wrapper">
     <nav class="navbar">
       <router-link class="navbar-logo" to="/">Galleries<span class="navbar-logo-app">APP</span></router-link>
-      <div>
+      <div class="navbar-links">
         <router-link class="navbar-router-link" to="/">Home</router-link>
         <router-link class="navbar-router-link" to="/about">About</router-link>
         <router-link class="navbar-router-link" to="/">Create new</router-link>
@@ -53,4 +53,18 @@ export default {
   .navbar-router-link:hover{
     color: #ff9900;
   }
+  @media (max-width: 850px) {
+        .navbar {
+          flex-direction: column;
+          justify-content: space-around;
+        }
+        .navbar-wrapper {
+          height: 250px;
+          
+        }
+        .navbar-links {
+          display: flex;
+          flex-direction: column;
+        }
+    }
 </style>
